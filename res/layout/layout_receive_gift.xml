@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/layout_full_wrap"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/img_gifticon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_female" />
+
+        <TextView
+            android:id="@+id/tv_gift"
+            style="@style/layout_wrap"
+            android:layout_below="@+id/tv_giftname"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/img_gifticon"
+            android:text="123"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_gifttime"
+            style="@style/layout_wrap"
+            android:layout_alignBottom="@+id/tv_gift"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text="123123"
+            android:visibility="gone"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_giftname"
+            style="@style/layout_wrap"
+            android:layout_alignLeft="@+id/tv_gift"
+            android:layout_alignTop="@+id/img_gifticon"
+            android:text="123123"
+            android:textColor="@color/darkgray"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:layout_marginTop="3dip"
+        android:background="@color/gray" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_find_select"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_helper_pos"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/darkgray"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_helper_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="赠送了一个钻石"
+            android:textColor="@color/darkgray"
+            android:textSize="13dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/lightgray" />
+
+</LinearLayout>

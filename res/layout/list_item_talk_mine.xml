@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+  <LinearLayout
+        android:id="@+id/layout_shows"
+        style="@style/layout_full_wrap"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@color/yellow" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/mbm_detail_limit_show_icon" />
+
+                <TextView
+                    android:id="@+id/tv_person_nvshen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_my_nvshenxiu"
+                    android:textColor="@color/white"
+                    android:textSize="13dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@color/lightblue" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/mbm_detail_time_machine_icon" />
+
+                <TextView
+                    android:id="@+id/tv_person_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_limitshow"
+                    android:textColor="@color/white"
+                    android:textSize="13dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="#dd00ff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/video_center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_my_shipinxiu"
+                    android:textColor="@color/white"
+                    android:textSize="13dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout> 
+    
+    <TextView
+        android:id="@+id/tv_talk_minetime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="10-10 23:08"
+        android:textColor="@color/darkgray"
+        android:textSize="10dip" />
+
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <ImageView
+            android:id="@+id/img_talk_oppicon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/layout_talk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chatmsg_right"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relayout_video"
+                    style="@style/layout_wrap"
+                    android:layout_width="match_parent"
+                    android:padding="5dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/img_play_video"
+                        style="@style/layout_wrap"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_female" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_vip"
+                        style="@style/layout_wrap"
+                        android:layout_alignBottom="@+id/img_play_video"
+                        android:layout_alignTop="@+id/img_play_video"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/tv_buy_vip"
+                            style="@style/layout_wrap"
+                            android:text="@string/str_vip_privilege"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btn_buy_vip"
+                            style="@style/layout_wrap"
+                            android:layout_marginTop="10dip"
+                            android:background="@color/lightblue"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:padding="5dip"
+                            android:text="@string/str_buyvip"
+                            android:textColor="@color/white"
+                            android:textSize="15dip" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_tip_video"
+                        style="@style/layout_wrap"
+                        android:layout_alignBottom="@+id/img_play_video"
+                        android:layout_alignTop="@+id/img_play_video"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/video_center" />
+
+                    <TextView
+                        android:id="@+id/tv_talk_giftname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/img_play_video"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/img_play_video"
+                        android:text="@string/str_talk_tip"
+                        android:textColor="@color/black"
+                        android:textSize="15dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_talk_giftcoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_talk_giftname"
+                        android:layout_below="@+id/tv_talk_giftname"
+                        android:layout_marginTop="10dip"
+                        android:text="coin"
+                        android:textColor="@color/darkgray"
+                        android:textSize="13dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_talk_giftcharm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_talk_giftcoin"
+                        android:layout_below="@+id/tv_talk_giftcoin"
+                        android:text="charm"
+                        android:textColor="@color/darkgray"
+                        android:textSize="13dip"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_talk_minemsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:padding="5dip"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:textSize="15dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_talk_mineicon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_female" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/shape_layout_background"
+        android:paddingLeft="10dip" 
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/detail_gift_icon_n" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            style="@style/layout_wrap"
+            android:padding="3dip"
+            android:lineSpacingExtra="2dip"
+            android:textColor="@color/lightgray"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+</LinearLayout>

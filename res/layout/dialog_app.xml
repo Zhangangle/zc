@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66000000"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/shape_whitetext"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:padding="5dip"
+            android:text="@string/str_adapp_title"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_ad_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:paddingLeft="5dip"
+            android:text="@string/str_adapp_msg"
+            android:textColor="@color/darkorange"
+            android:textSize="12dip" />
+
+        <GridView
+            android:id="@+id/gv_ad_app"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:columnWidth="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_ad_close"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/smssdk_clear_search" />
+
+</RelativeLayout>

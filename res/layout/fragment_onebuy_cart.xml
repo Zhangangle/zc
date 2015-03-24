@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toplayout"
+        layout="@layout/basic_onebuy_top" />
+
+    <com.jimome.mm.view.PullScrollView
+        android:id="@+id/pushscroll_onebuy_cart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_onbuy_cartprice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dip"
+        android:textColor="@color/darkgray"
+        android:textSize="15dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_onebuy_alipay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_onebuy_select"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_onebuy_alipay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:text="@string/str_onebuy_alipay"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_onebuy_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/shape_orange"
+            android:paddingBottom="8dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="8dip"
+            android:text="@string/str_onebuy_pay"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_onebuy_yibao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_onebuy_select"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_onebuy_yibao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:text="@string/str_onebuy_yibao"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_onebuy_yibao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/shape_orange"
+            android:paddingBottom="8dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="8dip"
+            android:text="@string/str_onebuy_pay"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/img_loading_error"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/loding_error_img"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/basic_top" />
+
+    <RelativeLayout
+        android:id="@+id/relayout_fate"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true" >
+
+        <ImageView
+            android:id="@+id/img_fate_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_female" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="35dip"
+            android:src="@drawable/fate_location" />
+
+        <TextView
+            android:id="@+id/tv_fate_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:paddingLeft="5dip"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/tv_fate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="23dip" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_fate_location"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tv_fate_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/tv_fate_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/tv_fate_picnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="80dip" >
+
+            <ImageView
+                android:id="@+id/img_fate_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fate_left_bg"
+                android:padding="14dip"
+                android:src="@drawable/fate_notyue_normal" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_fate_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fate_right_bg"
+                android:padding="14dip"
+                android:src="@drawable/fate_yue_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="130dip"
+            android:layout_height="25dip"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/fate_rank_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fate_like_tiny" />
+
+            <TextView
+                android:id="@+id/tv_fate_likenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="0人喜欢TA"
+                android:textColor="@color/white"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="115dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView1"
+            android:src="@drawable/fate_picture" />
+
+    </RelativeLayout>
+
+</LinearLayout>

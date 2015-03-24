@@ -1,0 +1,139 @@
+{
+	"window-no-title": true,
+	"window-full-screen": false,
+	"content-view": {
+    	"type": "relative-layout",
+		"width": "fill",
+		"height": "fill",
+		background: "#50000000",
+		"children": [
+		    {
+				"type": "relative-layout",
+		        "id": "container",
+		        "width": "fill",
+		        "height": "wrap",
+		        "background": "",
+		        "align": "hcenter vcenter",
+		        "margin": "auto 8dp auto 8dp",
+		        "padding":"auto auto auto auto",
+		        "children": [
+		        	
+		        	{
+				    	"type": "relative-layout",
+				        "id": "relative",
+				        "width": "fill",
+				        "height": "wrap",
+				        "background": "shape_whitetext",
+				        "align": "auto auto",
+				        "margin": "34dp 15dp auto 15dp",
+				        "padding":"auto auto auto auto",
+				        "children": [
+					        
+						    {
+						        "type": "image",
+						        "id": "background",
+						        "width": "fill",
+						        "height": "wrap",
+						        "background": "",
+						        "align": "auto auto",
+						        "margin": "auto auto auto auto",
+						        "image-scaleType": ""
+						    },
+							{
+						        "type": "button",
+						        "id": "cancelButton",
+						        "width": "10dp",
+						        "height": "10dp",
+						        "align": "right auto",
+						        "margin": "5dp 5dp auto auto",
+								"padding": "5dp 5dp 5dp 5dp",
+						        "text": "",
+						        "result-code": "canceled",
+						        "background": "user_close",
+						        "text-color": "",
+						        "text-size": ""
+						    },
+						    
+						    {
+						        "id": "label1",
+						        "type": "text",
+						        "width": "fill",
+						        "height": "wrap",
+						        "align": "auto auto",
+						        "margin": "10dp auto auto 20dp",
+						        "padding": "auto auto auto auto",
+						        "text": "用户协议：",
+						        "background": "",
+						        "text-color": "#ffd0d0d0",
+						        "text-size": "16px",
+						        "visibility": "gone"
+						    },
+							{
+								"id": "img1",
+								"type": "image",
+						        "width": "wrap",
+						        "height": "wrap",
+						        "background": "upay_sign_pic",
+						        "align": "hcenter below cancelButton",
+						        "margin": "20dp auto auto auto",
+						        "image-scaleType": ""
+							},
+						    {
+							   "id": "label2",
+							   "type": "text",
+							   "width": "wrap",
+						       "height": "wrap",
+						       "align": "auto below linear",
+						       "margin": "auto 10dp auto 10dp",
+						       "padding": "auto auto 5dp auto",
+						       "text": "每天登陆即可领取奖励，每天仅限领取一次，奖励丰富，大量金币等你领取仅需15元，金币可以让你获得更好的体验，点击领取即可，信息费统一由运营商代收.客户电话:4000010733",
+						       "background": "",
+						       "text-color": "#808069",
+						       "text-size": "8px",
+						       "visibility": "visible"
+							},
+							
+						    {
+						    	"id":"linear",
+						    	"type":"linear-layout",
+						    	"width":"fill",
+						    	"height":"wrap",
+						    	"align":"auto below img1",
+						    	"margin": "auto auto auto auto",
+						    	"children":[
+								   
+								    {
+								        "type": "button",
+								        "id": "okButton",
+								        "width": "fill",
+								        "height": "40dp",
+								        "align": "auto",
+								        "margin": "10dp 10dp 10dp 10dp",			
+								        "text": "领取",
+								        "result-code": "ok",
+								        "background": "shape_red",
+								        "text-color": "#ffff00",
+								        "text-size": "20px",
+								        "weight":"1"
+								    }
+						    	]
+						    }
+							
+						    
+				        ]
+				    },
+				    {
+									"id": "img2",
+									"type": "image",
+							        "width": "240dp",
+							        "height": "60dp",
+							        "background": "upay_sign_1",
+							        "align": "hcenter auto",
+							        "margin": "auto auto auto auto",
+							        "image-scaleType": ""
+					}
+				]
+			}
+		]
+	}
+}

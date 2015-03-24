@@ -1,0 +1,42 @@
+{
+    "window-no-title": true,
+    "window-full-screen": true,
+    "content-view": {
+        "type": "relative-layout",
+        "width": "fill",
+        "height": "fill",
+        "background": "#a0000000",
+        "children": [
+            {
+                "type": "relative-layout",
+                "id": "container",
+                "width": "wrap",
+                "height": "wrap",
+                "align": "hcenter vcenter",
+                "margin": "auto auto auto auto",
+                "padding": "auto 20dp",
+                "children": [
+                    {
+                        "type": "progressbar",
+                        "id": "progressLoad",
+                        "width": "wrap",
+                        "height": "wrap",
+                        "indeterminateDrawable": "upay_dialog_icon",
+                        "align": "auto auto", 
+                        "margin": "auto auto auto auto"
+                    },
+                    {
+                        "type": "text",
+                        "id": "textPrompt",
+                        "width": "wrap",
+                        "height": "wrap",
+                        "text": "网络有点卡，正在为您加载...  ",
+                        "text-size": "15px",
+                        "align": "auto vcenter right-of progressLoad",
+                        "margin": "auto auto auto auto"
+                    }
+                ]
+            }
+        ]
+    }
+}

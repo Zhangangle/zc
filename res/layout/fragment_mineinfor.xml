@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toplayout"
+        layout="@layout/basic_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_mine_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dip"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/tv_myheart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_intro_say"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_myword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_myheart"
+                    android:layout_alignBottom="@+id/tv_myheart"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_mine_word"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_mine_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_myword"
+                    android:layout_alignBottom="@+id/tv_myword"
+                    android:layout_toLeftOf="@+id/tv_myword"
+                    android:text="0"
+                    android:textColor="@color/theme_color_tab_text"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ed_mine_heart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/shape_whitetext"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="top|left"
+                android:hint="@string/str_mine_hearthint"
+                android:lines="3"
+                android:maxLength="50"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip"
+                android:textColor="@color/black"
+                android:textSize="15dip" >
+
+                <requestFocus />
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/shape_graytext" >
+
+                <TextView
+                    android:id="@+id/tv_myname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/str_mine_nickname"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <View
+                    android:id="@+id/view_line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/tv_myname"
+                    android:layout_marginTop="8dip"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_mybirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line2"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/str_mine_birthday"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_mine_year"
+                    android:layout_width="70dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_mybirthday"
+                    android:layout_alignBottom="@+id/tv_mybirthday"
+                    android:layout_alignLeft="@+id/ed_mine_nickname"
+                    android:background="@drawable/shape_whitetext"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_mine_month"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_mine_year"
+                    android:layout_alignBottom="@+id/tv_mine_year"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/tv_mine_year"
+                    android:background="@drawable/shape_whitetext"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_mine_day"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_mine_month"
+                    android:layout_alignBottom="@+id/tv_mine_month"
+                    android:layout_alignRight="@+id/ed_mine_nickname"
+                    android:background="@drawable/shape_whitetext"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+
+                <View
+                    android:id="@+id/view_line3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/tv_mybirthday"
+                    android:layout_marginTop="8dip"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_myheight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line3"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/str_oppositeheight"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_mine_height"
+                    android:layout_width="180dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_myheight"
+                    android:layout_alignBottom="@+id/tv_myheight"
+                    android:layout_alignLeft="@+id/tv_mine_year"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="170"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/ed_mine_nickname"
+                    android:layout_width="180dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_myname"
+                    android:layout_alignBottom="@+id/tv_myname"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/tv_myname"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textSize="15dip" />
+
+                <View
+                    android:id="@+id/view_line11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/tv_myheight"
+                    android:layout_marginTop="8dip"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_mygender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_line11"
+                    android:paddingBottom="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/str_register_gender"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_mine_gender"
+                    android:layout_width="180dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_mygender"
+                    android:layout_alignBottom="@+id/tv_mygender"
+                    android:layout_alignLeft="@+id/tv_mine_year"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:text="@string/str_male"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/shape_graytext"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_myalipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:paddingBottom="4dip"
+                    android:paddingTop="4dip"
+                    android:text="@string/str_mine_alipay"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/ed_mine_myalipay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@+id/tv_myalipay"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:hint="@string/str_mine_hint_alipay"
+                    android:maxLength="20"
+                    android:padding="5dip"
+                    android:singleLine="true"
+                    android:textSize="15dip" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/str_mine_secret"
+                android:textColor="@color/darkgray"
+                android:textSize="15dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/shape_graytext"
+                android:paddingBottom="3dip" >
+
+                <TextView
+                    android:id="@+id/tv_mytel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:paddingBottom="8dip"
+                    android:text="@string/str_mine_tel"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <View
+                    android:id="@+id/view_line6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/tv_mytel"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/gray"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/ed_mine_tel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/tv_mytel"
+                    android:layout_alignBottom="@+id/tv_mytel"
+                    android:layout_marginLeft="23dip"
+                    android:layout_marginRight="100dip"
+                    android:layout_toRightOf="@+id/tv_mytel"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_phone_input_hint"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textSize="15dip" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/bt_mine_gettel"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_alignBaseline="@+id/ed_mine_tel"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"
+                    android:visibility="gone"
+                    android:background="@color/transgray"
+                    android:text="@string/str_mine_gettel"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tv_mine_checknum"
+                    android:layout_width="60dip"
+                    android:layout_height="30dip"
+                    android:layout_alignLeft="@+id/ed_mine_tel"
+                    android:layout_below="@+id/view_line6"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_mine_checknum"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textSize="15dip"
+                    android:visibility="gone" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/bt_mine_checktel"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/view_line6"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@color/transgray"
+                    android:text="@string/str_mine_check"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_mine_resulttel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_mine_checknum"
+                    android:layout_alignBottom="@+id/tv_mine_checknum"
+                    android:layout_toRightOf="@+id/tv_mine_checknum"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/shape_graytext"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_myaddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:text="@string/str_mine_ad"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <EditText
+                    android:id="@+id/ed_mine_ad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@+id/tv_myaddr"
+                    android:background="@drawable/shape_whitetext"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:hint="@string/str_addr_input_hint"
+                    android:maxLength="50"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:padding="5dip"
+                    android:textSize="15dip" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:padding="3dip" >
+
+    <ImageView
+        android:id="@+id/img_fate_listicon"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_female" />
+
+    <ImageView
+        android:id="@+id/img_fate_listbless"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_alignBottom="@+id/img_fate_listicon"
+        android:layout_alignRight="@+id/img_fate_listicon"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/vip_1"
+        android:visibility="gone" />
+    
+     <ImageView android:layout_width="15dip"
+        android:layout_height="18dip"
+        android:layout_marginLeft="2dip"
+        android:paddingBottom="2dip"
+        android:id="@+id/img_fate_location"
+        android:src="@drawable/fate_location"
+         android:layout_alignLeft="@+id/img_fate_listicon"
+        android:layout_alignBottom="@+id/img_fate_listicon"/>
+    
+    <TextView style="@style/layout_wrap"
+        android:id="@+id/tv_fate_location"
+    	android:ellipsize="end"       
+		android:singleLine="true"
+        android:maxWidth="100dip"
+        android:textColor="@color/white"
+        android:textSize="12dip"
+        android:layout_marginBottom="2dip"
+        android:layout_alignBottom="@+id/img_fate_location"
+        android:layout_toRightOf="@+id/img_fate_location"/>
+
+    <TextView
+        android:id="@+id/tv_fate_listage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/img_fate_listicon"
+        android:layout_alignBottom="@+id/img_fate_listicon"
+        android:padding="2dip"
+        android:text="21岁"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="12dip" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relayout_like"
+        android:layout_width="0dip"
+        android:layout_height="58dip"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_like"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/detail_save_n" />
+
+        <TextView
+            android:id="@+id/tv_like"
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_like"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:text="@string/str_personal_guanzhu"
+            android:textColor="@color/lightblue"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout_gift"
+        android:layout_width="0dip"
+        android:layout_height="58dip"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_gift"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_gift_icon_selector" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_gift"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:text="@string/str_gift"
+            android:textColor="@color/lightblue"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout_xiu"
+        android:layout_width="0dip"
+        android:layout_height="58dip"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_xiu"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_video_selector" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_xiu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:text="@string/str_personal_xiu"
+            android:textColor="@color/lightblue"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout_chat"
+        android:layout_width="0dip"
+        android:layout_height="58dip"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_chat"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_send_selector" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_chat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:text="@string/str_chat"
+            android:textColor="@color/lightblue"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</LinearLayout>

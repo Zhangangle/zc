@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_onebuy_select"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/img_onebuy_listicon"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shape_whitetext"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_female" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_onebuy_listicon"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_onebuy_listicon"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingBottom="3dip"
+            android:text="希捷(Seagate)Backup Plus睿品(升级版)1T 2.5英寸USB3.0移动硬盘"
+            android:textColor="@color/black"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listcounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_onebuy_count"
+            android:layout_alignBottom="@+id/tv_onebuy_count"
+            android:layout_toRightOf="@+id/tv_onebuy_count"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="2"
+            android:textColor="@color/darkorange"
+            android:textSize="13dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_onebuy_listcounts"
+            android:layout_alignBottom="@+id/tv_onebuy_listcounts"
+            android:layout_toRightOf="@+id/tv_onebuy_listcounts"
+            android:singleLine="true"
+            android:text="@string/str_onebuy_man"
+            android:textColor="@color/darkgray"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_onebuy_listsurplusnums"
+            android:layout_alignBottom="@+id/tv_onebuy_listsurplusnums"
+            android:layout_alignLeft="@+id/tv_onebuy_listname"
+            android:paddingBottom="5dip"
+            android:singleLine="true"
+            android:text="价值:¥515.00"
+            android:textColor="@color/darkgray"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_onebuy_listprice"
+            android:layout_below="@+id/tv_onebuy_listsurplusnums"
+            android:singleLine="true"
+            android:text="@string/str_onebuy_onbuy"
+            android:textColor="@color/darkgray"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listsurplusnums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_onebuy_listname"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/tv_onebuy_listprice"
+            android:paddingBottom="8dip"
+            android:singleLine="true"
+            android:text="剩余123人次"
+            android:textColor="@color/darkgray"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listlucknums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_onebuy_listcounts"
+            android:layout_alignLeft="@+id/tv_onebuy_listsurplusnums"
+            android:text="幸运号码:100021356515"
+            android:textColor="@color/darkorange"
+            android:textSize="13dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listperiod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_onebuy_listicon"
+            android:layout_alignLeft="@+id/img_onebuy_listicon"
+            android:layout_alignRight="@+id/img_onebuy_listicon"
+            android:background="@color/transgray"
+            android:gravity="center"
+            android:padding="1dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gray" />
+
+</LinearLayout>

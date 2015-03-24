@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/basic_top" />
+
+    <LinearLayout
+        style="@style/layout_full_wrap"
+        android:layout_weight="1" >
+
+        <com.jimome.mm.view.PullScrollView
+            android:id="@+id/pullview_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="bottom"
+        android:background="@color/white" >
+
+        <include
+            android:id="@+id/layout_reply"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_height"
+            layout="@layout/layout_selectdetail_reply"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_menu"
+            style="@style/layout_full_wrap"
+            layout="@layout/layout_selectdetail_menu" />
+    </RelativeLayout>
+
+</LinearLayout>

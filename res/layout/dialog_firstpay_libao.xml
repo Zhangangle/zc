@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" 
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <RelativeLayout
+        style="@style/layout_wrap"
+        android:layout_marginTop="35dip"
+        android:background="@drawable/shape_whitetext">
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:padding="5dip"
+            android:src="@drawable/user_close" />
+
+        <ImageView
+            android:id="@+id/img_pic"
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_close"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:src="@drawable/upay_sign_pic" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/img_pic"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/shape_red"
+            android:text="@string/str_signin"
+            android:textColor="#ffff00"
+            android:textSize="16dip" />
+
+        <TextView android:id="@+id/tv_siginmsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_ok"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/str_sigin_msg"
+            android:textColor="#444444"
+            android:textSize="8dip" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="60dip"
+        android:src="@drawable/upay_sign_1" />
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_whitetext"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/img_giftstore_gridicon"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:src="@drawable/default_female" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gift_price_icon" />
+
+            <TextView
+                android:id="@+id/tv_giftstore_gridprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:singleLine="true"
+                android:text="30"
+                android:textColor="@color/yellow"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_giftstore_gridname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:singleLine="true"
+            android:text="钻石"
+            android:textColor="@color/darkgray"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_giftstore_gridmeili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="魅力+9000"
+            android:textColor="@color/darkgray" />
+    </LinearLayout>
+
+</LinearLayout>

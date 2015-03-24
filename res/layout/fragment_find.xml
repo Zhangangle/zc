@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toplayout"
+        layout="@layout/basic_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/discovery_top_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_find_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_find_task"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1"
+                        android:background="#ff0000"
+                        android:padding="5dip"
+                        android:text="@string/str_find_task"
+                        android:textColor="@color/white"
+                        android:textSize="16dip" />
+
+                    <FrameLayout
+                        style="@style/layout_full_wrap"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/btn_find_chongzhi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ff0000"
+                            android:padding="5dip"
+                            android:text="@string/str_find_chongzhi"
+                            android:textColor="@color/white"
+                            android:textSize="16dip" />
+
+                        <ImageView
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:src="@drawable/discount" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_find_near"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_find_select"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_find_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/discovery_nearby_icon" />
+
+                <TextView
+                    android:id="@+id/tv_find_near"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="@string/str_nearby"
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:id="@+id/img_find_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/discovery_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/layout_find_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_find_select"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/img_find_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/myself_shencai" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="@string/str_my_nvshenxiu"
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/discovery_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/layout_find_store"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_find_select"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_find_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/discovery_mall_icon" />
+
+                <TextView
+                    android:id="@+id/tv_find_store"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="@string/str_find_store"
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/discovery_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_find_onebuy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_find_select"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_find_onebuy"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/discovery_onebuy_icon" />
+
+                <TextView
+                    android:id="@+id/tv_find_onebuy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="@string/str_onebuy"
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:id="@+id/img_onebuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/skin_tip"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/discovery_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_find_read"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_find_select"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_find_read"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/default_female" />
+
+                <TextView
+                    android:id="@+id/tv_find_read"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="@string/str_find_read"
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:id="@+id/img_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/skin_tip"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/discovery_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_find_guaguale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_find_select"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/img_find_guaguale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/discovery_ranking_icon" />
+
+                <TextView
+                    android:id="@+id/tv_find_guaguale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:padding="5dip"
+                    android:text="@string/str_find_prize"
+                    android:textColor="@color/black"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/discovery_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:visibility="gone" />
+
+            <!--
+                 <com.jimome.mm.view.MyListView
+                android:id="@+id/list_find_popapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:gravity="fill"
+                android:listSelector="@drawable/button_find_select"
+                android:scrollbars="none" >
+            </com.jimome.mm.view.MyListView>
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

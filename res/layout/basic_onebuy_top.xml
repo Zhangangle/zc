@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/darkorange" >
+
+        <!-- 返回 -->
+
+        <LinearLayout
+            android:id="@+id/layout_onebuy_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_height"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_onebuy_back"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/back_up" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_onebuy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/str_onebuy_title"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_onebuy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_onbuy_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="18dip" />
+
+            <ImageView
+                android:id="@+id/img_onbuy_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/title_right_indicator" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

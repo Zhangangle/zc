@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dip" >
+
+    <ImageView
+        android:id="@+id/img_meitao_listicon"
+        android:layout_width="fill_parent"
+        android:layout_height="145dip"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_female" />
+
+    <ImageView
+        android:id="@+id/img_meitao_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_meitao_listicon"
+        android:layout_alignTop="@+id/img_meitao_listnew"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/video_center"
+        android:visibility="gone" />
+    
+    <LinearLayout android:id="@+id/layout_location"
+        style="@style/layout_wrap"
+        android:layout_alignBottom="@+id/img_meitao_listicon"
+        >
+
+        <ImageView
+            android:id="@+id/img_meitao_location"
+            android:layout_width="15dip"
+            android:layout_height="18dip"
+            android:layout_marginLeft="2dip"
+            android:paddingBottom="2dip"
+            android:src="@drawable/fate_location" />
+
+        <TextView
+            android:id="@+id/tv_meitao_location"
+            style="@style/layout_wrap"
+            android:layout_marginBottom="2dip"
+            android:ellipsize="end"
+            android:maxWidth="100dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12dip" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_vip"
+        style="@style/layout_wrap"
+        android:layout_alignBottom="@+id/img_meitao_listicon"
+        android:layout_alignTop="@+id/img_meitao_listnew"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_buy_vip"
+            style="@style/layout_wrap"
+            android:text="@string/str_vip_privilege"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_buy_vip"
+            style="@style/layout_wrap"
+            android:layout_marginTop="20dip"
+            android:background="@color/lightblue"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="5dip"
+            android:text="@string/str_buyvip"
+            android:textColor="@color/white"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_meitao_listnew"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/img_meitao_listicon"
+        android:layout_alignTop="@+id/img_meitao_listicon"
+        android:scaleType="fitStart"
+        android:src="@drawable/new_icon" />
+
+   
+    
+    <TextView
+        android:id="@+id/tv_meitao_listnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_meitao_listicon"
+        android:layout_alignRight="@+id/img_meitao_listicon"
+        android:padding="5dip"
+        android:textColor="@color/white"
+        android:textSize="13dip" />
+
+    <ImageView
+        android:id="@+id/img_meitao_listpraise"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_alignBottom="@+id/img_meitao_listicon"
+        android:layout_toLeftOf="@+id/tv_meitao_listnum"
+        android:paddingBottom="5dip"
+        android:visibility="gone"
+        android:src="@drawable/praise_icon_l" />
+
+    <TextView
+        android:id="@+id/tv_meitao_listmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_meitao_listicon"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:paddingLeft="8dip"
+        android:paddingRight="5dip"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="15dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_meitao_listmsg"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/tv_meitao_listname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/darkgray"
+            android:textSize="13dip" />
+
+        <ImageView
+            android:id="@+id/img_meitao_listrank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:scaleType="fitStart"
+            android:src="@drawable/ranking_1" />
+
+        <ImageView
+            android:id="@+id/img_meitao_listvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:src="@drawable/vip_m1" />
+    </LinearLayout>
+
+</RelativeLayout>

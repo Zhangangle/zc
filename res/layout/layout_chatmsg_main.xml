@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jimome.mm.view.MyListView
+        android:id="@+id/lv_talk"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#C0C0C0"
+        android:divider="@null"
+        android:gravity="fill"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:transcriptMode="normal" >
+    </com.jimome.mm.view.MyListView>
+
+    <Button
+        android:id="@+id/btn_talk_vip"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#ff0000"
+        android:text="@string/str_talk_vip"
+        android:textColor="@color/white"
+        android:textSize="15dip"
+        android:visibility="gone" />
+
+</LinearLayout>

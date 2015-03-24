@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout style="@style/layout_full"
+        android:id="@+id/relayout_viewpager" 
+        android:visibility="gone">
+ 		<com.jimome.mm.view.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    style="@style/layout_full_wrap" />
+        <LinearLayout
+            android:id="@+id/layout_dots"
+            style="@style/layout_full_wrap"
+            android:layout_marginBottom="5dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_vip"
+            style="@style/layout_full_wrap"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="10dip" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_buy_vip"
+                style="@style/layout_wrap"
+                android:layout_gravity="center"
+                android:text="@string/str_vip_privilege"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_buy_vip"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/lightblue"
+                android:clickable="false"
+                android:focusable="false"
+                 android:layout_gravity="center"
+                android:focusableInTouchMode="false"
+                android:padding="5dip"
+                android:text="@string/str_buyvip"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <FrameLayout style="@style/layout_full_wrap"
+        android:id="@+id/frlayout_video"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_select_icon"
+            style="@style/layout_full_wrap"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_female" />
+
+        <ImageView
+            android:id="@+id/img_video_play"
+            style="@style/layout_wrap"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/video_center"
+            />
+       
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/layout_full_wrap"
+        android:background="@color/white"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_nick"
+            style="@style/layout_wrap"
+            android:layout_alignTop="@+id/img_avatar"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:text="123123"
+            android:textColor="@color/text_color_comment" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            style="@style/layout_wrap"
+            android:layout_alignLeft="@+id/tv_nick"
+            android:layout_below="@+id/tv_nick"
+            android:text="123123"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="13dip"
+            android:layout_height="15dip"
+            android:layout_alignBottom="@+id/img_time"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/limit_show_img" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/layout_wrap"
+            android:layout_alignTop="@+id/tv_nick"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/img_show"
+            android:textColor="@color/black"
+            android:textSize="13dip" />
+
+        <ImageView
+            android:id="@+id/img_time"
+            style="@style/layout_wrap"
+            android:layout_alignTop="@+id/tv_nick"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:src="@drawable/limit_time" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout_full_wrap"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/layout_full_wrap"
+            android:padding="10dip" >
+
+            <TextView
+                style="@style/layout_wrap"
+                android:text="收到的礼物"
+                android:textColor="@color/darkgray" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|right"
+                android:text="@string/str_my_more"
+                android:textColor="@color/darkgray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/layout_gift_content"
+            style="@style/layout_full_wrap"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_full_wrap"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/title_bg" >
+
+            <RelativeLayout
+                android:id="@+id/relayout_reply"
+                style="@style/layout_wrap"
+                android:layout_gravity="center"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_comment_num"
+                    style="@style/layout_wrap"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:id="@+id/tv_str_comment"
+                    style="@style/layout_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_comment_num"
+                    android:text="@string/str_reply"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dip"
+                android:layout_marginTop="14dip"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_more"
+                style="@style/layout_wrap"
+                android:layout_gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_more_num"
+                    style="@style/layout_wrap"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" />
+
+                <TextView
+                    android:id="@+id/tv_str_more"
+                    style="@style/layout_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_more_num"
+                    android:text="@string/str_request_more"
+                    android:textColor="@color/black"
+                    android:textSize="12dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.jimome.mm.view.MyListView
+            android:id="@+id/lv_reply_praise"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#C0C0C0"
+            android:divider="@null"
+            android:gravity="fill"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </com.jimome.mm.view.MyListView>
+    </LinearLayout>
+
+</LinearLayout>

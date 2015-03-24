@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_whitetext"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:text="@string/str_onbuy_buycount"
+        android:textColor="@color/black"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/tv_dialog_surplusnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="剩余232人次"
+        android:textColor="@color/darkgray"
+        android:textSize="15dip" />
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/btn_dialog_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_decrease_disabled" />
+
+        <EditText
+            android:id="@+id/ed_dialog_nums"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/shape_graytext"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="2"
+            android:textColor="@color/darkgray"
+            android:textSize="15dip" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_dialog_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_increase_disabled" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_msg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/btn_dialog_cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="#14220000"
+            android:padding="10dip"
+            android:text="@string/str_cancel"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_dialog_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape_orange"
+            android:padding="10dip"
+            android:text="@string/str_sure"
+            android:textColor="@color/white"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_task_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/shape_whitetext"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/str_task_nature"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+
+            <TextView
+                android:id="@+id/tv_task_listnature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/str_task_name"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+
+            <TextView
+                android:id="@+id/tv_task_listname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/str_task_description"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+
+            <TextView
+                android:id="@+id/tv_task_listdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/str_task_progress"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+
+            <TextView
+                android:id="@+id/tv_task_listprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_task_award"
+                android:textColor="@color/darkgray"
+                android:textSize="13dip" />
+
+            <TextView
+                android:id="@+id/tv_task_listaward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#ff0000"
+                android:textSize="13dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_task_listgetaward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@color/gray"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="8dip"
+            android:text="@string/str_task_waitaward"
+            android:textColor="@color/white"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_task_type"
+        android:layout_width="57dip"
+        android:layout_height="58dip"
+        android:layout_alignRight="@id/layout_task_content"
+        android:layout_alignTop="@id/layout_task_content"
+        android:src="@drawable/task_type_new" />
+
+</RelativeLayout>

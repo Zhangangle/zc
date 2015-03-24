@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/basic_top" />
+
+    <com.jimome.mm.view.PullScrollView
+        android:id="@+id/scrollView_admin"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+    </com.jimome.mm.view.PullScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_admin_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/btn_chattype_selector" />
+
+        <EditText
+            android:id="@+id/ed_talk_msg"
+            android:layout_width="match_parent"
+            android:layout_height="33dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/chat_edit_normal"
+            android:ems="10"
+            android:hint="@string/str_chatmsg_hint"
+            android:padding="6dip"
+            android:textSize="14dip" />
+
+        <Button
+            android:id="@+id/btn_chatmsg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/shape_blue"
+            android:padding="8dip"
+            android:text="@string/str_talk_send"
+            android:textColor="@color/white" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

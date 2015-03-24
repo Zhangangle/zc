@@ -1,0 +1,102 @@
+{
+	"window-no-title": true,
+	"window-full-screen": false,
+	"content-view": {
+    	"type": "relative-layout",
+		"width": "fill",
+		"height": "fill",
+		"children": [
+		    {
+		    	"type": "relative-layout",
+		        "id": "container",
+		        "width": "fill",
+		        "height": "wrap",
+		        "background": "#50000000",
+		        "align": "hcenter vcenter",
+		        "margin": "auto 15dp auto 15dp",
+		        "padding":"auto auto auto auto",
+		        "children": [
+				    {
+				        "type": "image",
+				        "id": "background",
+				        "width": "wrap",
+				        "height": "wrap",
+				        "background": "",
+				        "align": "auto auto",
+				        "margin": "auto auto auto auto",
+				        "image-scaleType": ""
+				    },
+					{
+				        "type": "button",
+				        "id": "cancelButton",
+				        "width": "20dp",
+				        "height": "20dp",
+				        "align": "right auto",
+				        "margin": "auto auto auto auto",
+						"padding": "5dp 5dp 5dp 5dp",
+				        "text": "",
+				        "result-code": "canceled",
+				        "background": "user_close",
+				        "text-color": "",
+				        "text-size": ""
+				    },
+				    {
+				        "id": "label1",
+				        "type": "text",
+				        "width": "fill",
+				        "height": "wrap",
+				        "align": "auto auto blow cancelButton",
+				        "margin": "10dp auto auto 20dp",
+				        "padding": "auto auto auto auto",
+				        "text": "用户协议：",
+				        "background": "",
+				        "text-color": "#ffd0d0d0",
+				        "text-size": "16px",
+				        "visibility": "gone"
+				    },
+				    {
+				        "id": "label2",
+				        "type": "text",
+				        "width": "wrap",
+				        "height": "wrap",
+				        "align": "right-of img1 below label1",
+				        "margin": "auto 10dp auto 10dp",
+				        "padding": "10dp auto auto auto",
+				        "text": "1、服务条款的接受\n 欢迎使用同城美女视频交友软件，同城美女视频交友是约会交友活动的综合信息服务平台。使用的服务之前代表您承诺遵守本服务条款。\n\n 2、隐私保护\n尊重用户个人隐私是我们的一项基本原则，您的个人资料的使用将受到中国有关隐私的法律和本公司《隐私保护声明》之规范。\n\n3、服务说明\n通过互联网为用户提供网络服务，包括在线及无线的相关业务。  同城美女视频交友在提供网络服务时，会对查看美女视频网络服务收取拾五元费用，在此情况下，会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。\n\n 4、用户行为\n用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。客服电话:4000010733",
+				        "background": "",
+				        "text-color": "#FFFAF0",
+				        "text-size": "12px",
+				        "visibility": "visible"
+				        
+				    },
+				    {
+				    	"id":"linear",
+				    	"type":"linear-layout",
+				    	"width":"fill",
+				    	"height":"wrap",
+				    	"align":"below label2",
+				    	"margin": "auto auto auto auto",
+				    	"children":[
+						   
+						    {
+						        "type": "button",
+						        "id": "okButton",
+						        "width": "fill",
+						        "height": "40dp",
+						        "align": "auto",
+						        "margin": "10dp 10dp 10dp 10dp",			
+						        "text": "确定",
+						        "result-code": "ok",
+						        "background": "shape_red",
+						        "text-color": "#ffff00",
+						        "text-size": "18px",
+						        "weight":"1"
+						    }
+				    	]
+				    }
+				    
+		        ]
+		    }
+		]
+	}
+}

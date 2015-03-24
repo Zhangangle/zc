@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toplayout"
+        layout="@layout/basic_top" />
+
+    <com.jimome.mm.view.PullScrollView
+        android:id="@+id/pushscroll_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none" />
+
+    <!--
+    <ScrollView
+        style="@style/layout_full"
+        android:layout_weight="1" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/layout_full"
+            android:orientation="vertical" >
+                <TextView
+      					  android:id="@+id/tv_inbox_title"
+      					  android:layout_width="match_parent"
+       					 android:layout_height="wrap_content"
+       					 android:text="@string/str_inbox_title" 
+       					 android:textSize="15dip"
+     					   android:background="@color/lightgray"
+       					 android:textColor="@color/darkgray"
+						android:padding="5dip"
+						android:paddingLeft="5dip"/> 
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center">
+
+     			 
+                <FrameLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/frlayout_notice">
+                    
+                    <TextView style="@style/layout_wrap"
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_notice"
+                        android:text="@string/str_inbox_notice"
+                        android:textColor="@color/input_text"/>
+                    
+                    <View android:layout_width="wrap_content"
+                    	android:layout_height="1px"
+                    	android:layout_gravity="bottom"
+                    	android:id="@+id/v_notice"
+                    	android:background="@color/gray"/>
+                    
+                </FrameLayout>
+                
+                <View android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"/>
+                <FrameLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/frlayout_inbox">
+                    
+                    <TextView style="@style/layout_wrap"
+                        android:layout_gravity="center"
+                        android:id="@+id/tv_inbox_main"
+                        android:text="@string/str_inbox"
+                        android:textColor="@color/input_text"/>
+                    
+                    
+                    <View android:layout_width="wrap_content"
+	                    android:layout_height="1px"
+	                    android:layout_gravity="bottom"
+	                    android:id="@+id/v_inbox"
+	                    android:background="@color/gray"/>
+                    
+                </FrameLayout>
+                
+                <View android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"/>
+                <FrameLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/frlayout_contact">
+                    
+                    <TextView style="@style/layout_wrap"
+                        android:id="@+id/tv_contact"
+                        android:layout_gravity="center"
+                        android:text="@string/str_inbox_contact"
+                        android:textColor="@color/input_text"/>
+                    
+                    <View android:layout_width="wrap_content"
+	                    android:layout_height="1px"
+	                    android:layout_gravity="bottom"
+	                    android:id="@+id/v_contact"
+	                    android:background="@color/gray"/>
+                    
+                </FrameLayout>
+                
+            </LinearLayout>
+   	<com.jimome.mm.view.MyListView 
+        android:id="@+id/lv_inbox"
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:layout_weight="1" 
+           android:divider="@null"
+           android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:gravity="fill"
+        android:cacheColorHint="#C0C0C0" >
+   	    
+   	</com.jimome.mm.view.MyListView>
+        </LinearLayout>
+    </ScrollView>
+    -->
+
+</LinearLayout>

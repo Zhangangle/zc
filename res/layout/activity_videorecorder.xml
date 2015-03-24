@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relayout_top"
+        style="@style/layout_full_wrap"
+        android:background="#7f000000" >
+
+        <LinearLayout  style="@style/layout_wrap"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true">
+            <ImageView
+            android:id="@+id/img_flash"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/record_video_flash_close" />
+
+        <ImageView
+            android:id="@+id/img_switchCamera"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/record_video_switch_camera" />
+        </LinearLayout>
+        
+
+        <TextView
+            android:id="@+id/tv_recodertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white" />s
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/recorder_surface_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relayout_bottom"
+        android:layout_below="@+id/relayout_top"
+        android:layout_marginTop="50dip" >
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+     
+    <RelativeLayout style="@style/layout_full_wrap"
+        android:padding="5dip"
+        android:background="#7f000000"
+        android:id="@+id/relayout_bottom"
+         android:layout_alignParentBottom="true" >
+        <Button 
+        android:id="@+id/btn_video"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/record_video_start" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

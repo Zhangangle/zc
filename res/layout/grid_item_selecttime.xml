@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_onebuy_select"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_onebuy_listselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dip"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="14dip" />
+
+</RelativeLayout>

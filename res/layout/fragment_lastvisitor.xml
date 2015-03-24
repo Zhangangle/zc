@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/basic_top" />
+
+    <com.jimome.mm.view.PullScrollView
+        android:id="@+id/pushscroll_visitor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+    </com.jimome.mm.view.PullScrollView>
+
+    <ImageView
+        android:id="@+id/img_visitor_ad"
+        style="@style/layout_full_wrap"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

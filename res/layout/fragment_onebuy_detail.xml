@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toplayout"
+        layout="@layout/basic_onebuy_top" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:id="@+id/img_onebuy_listicon"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_female" />
+        <!-- android:background="@drawable/shape_whitetext" -->
+
+        <TextView
+            android:id="@+id/tv_onebuy_listname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_onebuy_listicon"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/img_onebuy_listicon"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingBottom="3dip"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_onebuy_listname"
+            android:layout_below="@+id/tv_onebuy_listname"
+            android:paddingBottom="5dip"
+            android:singleLine="true"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+
+        <ImageView
+            android:id="@+id/img_onebuy_big"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/img_onebuy_listicon"
+            android:layout_alignRight="@+id/img_onebuy_listicon"
+            android:padding="3dip"
+            android:src="@drawable/view_big_pic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dip" >
+
+        <ProgressBar
+            android:id="@+id/progb_onebuy_list"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/myprogress_style" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listjoinnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/progb_onebuy_list"
+            android:singleLine="true"
+            android:textColor="@color/darkorange"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_joined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_onebuy_listjoinnum"
+            android:singleLine="true"
+            android:text="@string/str_onebuy_list_join"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_listcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progb_onebuy_list"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_onebuy_listcount"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="@string/str_onebuy_list_count"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/str_onebuy_listsurplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/progb_onebuy_list"
+            android:singleLine="true"
+            android:textColor="@color/lightblue"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/tv_onebuy_surplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/str_onebuy_listsurplus"
+            android:singleLine="true"
+            android:text="@string/str_onebuy_list_surplus"
+            android:textColor="@color/darkgray"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_onebuy_detial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_onebuy_select"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_onebuy_detial"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:text="@string/str_onebuy_detail"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <ImageView
+            android:id="@+id/img_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/skin_tip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_onebuy_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/discovery_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_onebuy_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_onebuy_select"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_onebuy_record"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:text="@string/str_onebuy_record"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <ImageView
+            android:id="@+id/img_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/skin_tip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_find_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/discovery_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_onebuy_lastman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_onebuy_select"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_onebuy_last"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="5dip"
+            android:text="@string/str_onebuy_last"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <ImageView
+                android:id="@+id/img_onebuy_lasticon"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/default_female" />
+
+            <TextView
+                android:id="@+id/tv_onebuy_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/img_onebuy_lasticon"
+                android:paddingLeft="5dip"
+                android:textColor="@color/lightblue"
+                android:textSize="14dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_onebuy_lastaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_onebuy_lastname"
+                android:textColor="@color/darkgray"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/tv_onebuy_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_onebuy_lastname"
+                android:layout_below="@+id/tv_onebuy_lastname"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:text="@string/str_onebuy_answertime"
+                android:textColor="@color/darkgray"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/tv_onebuy_answertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_onebuy_answer"
+                android:layout_toRightOf="@+id/tv_onebuy_answer"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/darkgray"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/str_onebuy_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_onebuy_answer"
+                android:layout_toRightOf="@+id/img_onebuy_lasticon"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:text="@string/str_onebuy_buytime"
+                android:textColor="@color/darkgray"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/tv_onebuy_buytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/str_onebuy_buy"
+                android:layout_toRightOf="@+id/str_onebuy_buy"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/darkgray"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/tv_onbuy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/str_onebuy_buy"
+                android:layout_below="@+id/str_onebuy_buy"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:text="@string/str_onebuy_buynum"
+                android:textColor="@color/darkgray"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/tv_onebuy_buynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_onbuy_num"
+                android:layout_toRightOf="@+id/tv_onbuy_num"
+                android:paddingLeft="5dip"
+                android:paddingTop="3dip"
+                android:textColor="@color/darkorange"
+                android:textSize="12dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dip"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/btn_onebuy_buy"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_weight="1"
+                android:background="@drawable/shape_orange"
+                android:padding="5dip"
+                android:text="@string/str_onebuy_buy"
+                android:textColor="@color/white"
+                android:textSize="14dip" />
+
+            <Button
+                android:id="@+id/btn_onebuy_joincart"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue"
+                android:padding="5dip"
+                android:text="@string/str_onebuy_cart"
+                android:textColor="@color/white"
+                android:textSize="14dip" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_onebuy_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dip" >
+
+                <ImageView
+                    android:id="@+id/img_onebuy_joincart"
+                    android:layout_width="31dip"
+                    android:layout_height="23dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cart_normal" />
+
+                <Button
+                    android:id="@+id/btn_onbuy_cartnum"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/img_onebuy_joincart"
+                    android:background="@drawable/cart_count"
+                    android:textColor="@color/white"
+                    android:textSize="8dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_loading_error"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/loding_error_img"
+        android:visibility="gone" />
+
+</LinearLayout>

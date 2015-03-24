@@ -1,0 +1,1 @@
+{ "channel":"test_channel", "build_date":"20141212" }

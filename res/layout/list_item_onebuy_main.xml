@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_find_select"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/img_onebuy_listicon"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_marginLeft="5dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shape_whitetext"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_female" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_onebuy_listname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:minLines="2"
+                android:paddingBottom="3dip"
+                android:text="希捷(Seagate)Backup Plus睿品(升级版)1T 2.5英寸USB3.0移动硬盘"
+                android:textColor="@color/black"
+                android:textSize="13dip" />
+
+            <TextView
+                android:id="@+id/tv_onebuy_listprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:singleLine="true"
+                android:text="价值:¥515.00"
+                android:textColor="@color/darkgray"
+                android:textSize="12dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ProgressBar
+                        android:id="@+id/progb_onebuy_list"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="5dip"
+                        android:max="100"
+                        android:progress="20"
+                        android:progressDrawable="@drawable/myprogress_style" />
+
+                    <TextView
+                        android:id="@+id/tv_onebuy_listjoinnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/progb_onebuy_list"
+                        android:singleLine="true"
+                        android:text="58"
+                        android:textColor="@color/darkorange"
+                        android:textSize="10dip" />
+
+                    <TextView
+                        android:id="@+id/tv_onebuy_joined"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tv_onebuy_listjoinnum"
+                        android:singleLine="true"
+                        android:text="@string/str_onebuy_list_join"
+                        android:textColor="@color/darkgray"
+                        android:textSize="10dip" />
+
+                    <TextView
+                        android:id="@+id/tv_onebuy_listcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/progb_onebuy_list"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="500"
+                        android:textColor="@color/darkgray"
+                        android:textSize="10dip" />
+
+                    <TextView
+                        android:id="@+id/tv_onebuy_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_onebuy_listcount"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="@string/str_onebuy_list_count"
+                        android:textColor="@color/darkgray"
+                        android:textSize="10dip" />
+
+                    <TextView
+                        android:id="@+id/str_onebuy_listsurplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/progb_onebuy_list"
+                        android:singleLine="true"
+                        android:text="442"
+                        android:textColor="@color/lightblue"
+                        android:textSize="10dip" />
+
+                    <TextView
+                        android:id="@+id/tv_onebuy_surplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/str_onebuy_listsurplus"
+                        android:singleLine="true"
+                        android:text="@string/str_onebuy_list_surplus"
+                        android:textColor="@color/darkgray"
+                        android:textSize="10dip" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_onebuy_listcart"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/btn_onebuy_cart"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/gray" />
+
+</LinearLayout>

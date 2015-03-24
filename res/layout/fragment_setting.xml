@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray" >
+    
+    <include layout="@layout/basic_top"/>
+    
+    <LinearLayout style="@style/layout_full_wrap"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/layout_pushnotify"
+            style="@style/layout_full_wrap"
+            android:background="@drawable/button_find_select"
+            android:paddingBottom="20dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                style="@style/layout_full_wrap"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/str_setting_pushsetting"
+                android:textColor="@color/black" />
+
+            <ImageView android:id="@+id/img_toggle"
+                android:layout_width="33dip"
+                android:layout_height="22dip"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/toggle_open" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/gray" />
+        
+        <LinearLayout
+            android:id="@+id/layout_update"
+            style="@style/layout_full_wrap"
+            android:background="@drawable/button_find_select"
+            android:paddingBottom="20dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                style="@style/layout_full_wrap"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/str_setting_checkupdate"
+                android:textColor="@color/black" />
+
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/tv_versionstatus"
+                android:textColor="@color/darkgray"/>
+            <ImageView android:layout_width="21dip"
+                android:layout_height="10dip"
+                android:id="@+id/img_new"
+                android:visibility="gone"
+                android:background="@drawable/icon_update_new"/>
+        </LinearLayout> 
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/layout_clearcache"
+            style="@style/layout_full_wrap"
+            android:background="@drawable/button_find_select"
+            android:paddingBottom="20dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                style="@style/layout_full_wrap"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:text="@string/str_setting_clearcache"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/discovery_arrow" />
+        </LinearLayout> 
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

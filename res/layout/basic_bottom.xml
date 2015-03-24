@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/layout_yuanfen"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_nvshenxiu"
+                style="@style/layout_full"
+                android:background="@color/white"
+                android:drawableTop="@drawable/button_limitshow_selector"
+                android:padding="3dip"
+                android:text="@string/str_my_shipinxiu"
+                android:textColor="@color/main_bottom_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_recommend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_beautiful"
+                style="@style/layout_full"
+                android:background="@color/white"
+                android:drawableTop="@drawable/button_beautiful_selector"
+                android:padding="3dip"
+                android:text="@string/str_limitshow"
+                android:textColor="@color/main_bottom_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_discovery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_discovery"
+                style="@style/layout_full"
+                android:background="@color/white"
+                android:drawableTop="@drawable/button_discovery_selector"
+                android:padding="3dip"
+                android:text="@string/str_discovery"
+                android:textColor="@color/main_bottom_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_inbox"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_inbox"
+                style="@style/layout_full"
+                android:background="@color/white"
+                android:drawableTop="@drawable/button_chatmsg_selector"
+                android:padding="3dip"
+                android:text="@string/str_inbox"
+                android:textColor="@color/main_bottom_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_mine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_mine"
+                style="@style/layout_full"
+                android:background="@color/white"
+                android:drawableTop="@drawable/button_account_selector"
+                android:padding="3dip"
+                android:text="@string/str_mine"
+                android:textColor="@color/main_bottom_text_color" />
+
+            <ImageView
+                android:id="@+id/img_bottom_myself"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="15dip"
+                android:paddingTop="2dip"
+                android:src="@drawable/skin_tip"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

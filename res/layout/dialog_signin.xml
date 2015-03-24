@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingBottom="60dip"
+    android:background="#50000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="315dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="80dip"
+        android:background="@drawable/shape_whitetext"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="50dip" >
+
+            <LinearLayout
+                android:id="@+id/layout_first"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/dialog_signin_ed"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_firsttitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_first"
+                    android:textColor="@color/white"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_first"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/red"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_second"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/dialog_signin_ng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_secondtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_second"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_second"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_third"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/dialog_signin_ng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_thirdtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_third"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_third"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fourth"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/dialog_signin_ng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_fourthtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_fourth"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_fourth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layout_fifth"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/dialog_signin_ng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_fifthtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_fifth"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_fifth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_fifth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_sixth"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/dialog_signin_ng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_sixthtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_sixth"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_sixth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_sixth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_seventh"
+                android:layout_width="70dip"
+                android:layout_height="85dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/dialog_signin_ng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_signin_seventhtitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dip"
+                    android:text="@string/str_signin_seventh"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/tv_signin_seventh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/darkgray"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:id="@+id/img_signin_seventh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dip"
+                    android:src="@drawable/dialog_signin_rewarded"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/btn_dialog_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/shape_red"
+            android:text="@string/str_signin"
+            android:textColor="#ffff00"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:textColor="#444444"
+            android:text=""
+          
+            android:textSize="8dip" />
+        
+      <LinearLayout  style="@style/layout_full_wrap"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="6dip"
+            android:paddingBottom="6dip"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            
+          <LinearLayout  style="@style/layout_wrap"
+              android:padding="5dip"
+               android:id="@+id/layout_check">
+                <ImageView android:layout_width="13dip"
+              android:layout_height="13dip"
+              android:id="@+id/img_check"
+             android:clickable="false"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+              android:src="@drawable/checkbox_pressed"/>
+          </LinearLayout>
+        
+          
+          <TextView style="@style/layout_full_wrap"
+              android:text="@string/str_video_plugin"
+              android:textColor="@color/darkgray"
+              android:layout_gravity="center"
+              android:layout_marginLeft="3dip"
+              android:textSize="8dip"/>
+          
+        </LinearLayout>
+    
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="260dip"
+        android:layout_height="140dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login_reward_dialog_title"/>
+
+    <ImageView
+        android:id="@+id/img_sigin_close"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:padding="5dip"
+        android:visibility="gone"
+        android:src="@drawable/user_close" />
+
+</RelativeLayout>

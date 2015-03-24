@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relayout_comment"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/top_height"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_comment"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_comment_normal" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:text="@string/str_reply"
+            android:textColor="@color/text_color_comment"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/relayout_gift"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/top_height"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_gift"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_gift_normal" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_gift"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dip"
+            android:text="@string/str_gift"
+            android:textColor="@color/text_color_gift"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/relayout_praise"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/top_height"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_praise"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_praise_normal" />
+
+        <TextView
+            android:id="@+id/tv_request_praise"
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_praise"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dip"
+            android:text="@string/str_request_more"
+            android:textColor="@color/text_color_more"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/relayout_chat"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/top_height"
+        android:layout_weight="1"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/img_chat"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_chat_normal" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_below="@+id/img_chat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dip"
+            android:text="@string/str_chat"
+            android:textColor="@color/text_color_chat"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</LinearLayout>
